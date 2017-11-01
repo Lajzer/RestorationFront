@@ -1,0 +1,29 @@
+body{
+    background-color: #953800;
+    color: black;
+}
+.header{
+    background-color: #a5653A;
+    color : black;
+}
+.footer{
+    background-color: #a5653A;
+    color: black;
+}
+.post{
+    background-color: #a5653A;
+    color : black;
+}
+.comments{
+    background-color: #a5653A;
+    color : black;
+}
+a:link, a:active, a:visited{
+    color: #356b00;
+    text-decoration: none;
+}
+a:hover{
+    color: #899131;
+    text-decoration: none;
+}
+

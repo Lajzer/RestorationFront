@@ -1,0 +1,13 @@
+$def with (posts)
+
+$for post in posts[-10:]:
+  <div class="post">
+    <h2>Title : $post.title</h2>
+    <p>$post.text </p>
+    <p><small>$post.author <br> $post.date</small></p>
+  </div>
+
+  <div class="comments">
+      <p>Place for comments</p>
+  </div>
+  <br>

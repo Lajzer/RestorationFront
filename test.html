@@ -1,0 +1,15 @@
+$def tr(values):
+<tr>
+    $for v in values:
+    <td>$v</td>
+</tr>
+
+$def table(rows):
+<table>
+    $for row in rows:
+        $:row
+</table>
+
+$ data = [['a', 'b', 'c'], [1, 2, 3], [2, 4, 6], [3, 6, 9] ]
+$:table([tr(d) for d in data])
+
