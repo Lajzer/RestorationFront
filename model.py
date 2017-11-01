@@ -77,8 +77,8 @@ def new_user(login, passwordHash):
     return
 
 def authenticate(name_, passwordHash_):
-    uzyt = session.query(User).filter_by(name=name_)
-    if uzyt != None and uzyt.password == passwordHash:
+    uzyt = session.query(User).filter_by(name=name_).first()
+    if uzyt != None and uzyt.password == passwordHash_:
         print("zalogowano")
         return 0
     print("zly login lub haslo")
